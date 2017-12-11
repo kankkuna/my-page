@@ -9,47 +9,72 @@
 .container{
   max-width: 1600px;
   height: 100%;
+  margin-top:
+
+}
+
+header {
+  font-family: 'Lily Script One', cursive;
 
 }
 
 nav {
   position: fixed;
   margin-top: 0;
-  margin-bottom: 10px;
-  background-position: center;
   background-color: #edc4ef;
+  height: 7%;
+
 }
 
-header {
-  background-color: pink;
-  margin-top: 38px;
+ul{
+  list-style: none;
+  margin-left: 2%;
+
 }
 
 div {
-  border: solid 0.5px;
+  /*border: solid 0.5px;*/
   margin-bottom: 15px;
 
 }
 
-ul li{
-  display: inline;
-  list-style: none;
-}
+.ux {
+  margin-top: 12%;
 
-a {
-  text-align: right;
-  text-decoration: none;
-  color: black;
 }
 
 .one {
-  font-family: 'Lily Script One', cursive;
+}
+
+.two{
+  display: inline;
+  list-style: none;
+  margin-left: 70%;
+  letter-spacing: 1px;
+
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: #edc4ef;
+  margin-right: 10px;
+
 }
 
 footer {
   text-align: center;
 }
 
+.what {
+  margin-right: 15%;
+  margin-left: 10%
+}
+
+.contact {
+  margin-left: 10%;
+}
 .row::before, .row::after{
   content: "";
   display: table;
@@ -73,7 +98,11 @@ footer {
 .col-9 {width: 75%;}
 .col-12 {width: 100%;}
 
-@media screen and (min-width:760px) {
+.dates {
+display: none;
+}
+
+@media (min-width:760px) {
   .part-one{
     display: flex;
     margin-top: 0;
@@ -82,8 +111,13 @@ footer {
     display: none;
   }
 
-  @media all and (max-width:760px) {
-      .dates {
-      display: none;
-    }
+  .dates {
+  display: block;
+
   }
+
+  .ux {
+    margin-top: 1%;
+  }
+
+}
