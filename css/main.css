@@ -1,0 +1,89 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lily Script One', cursive;
+  text-align: center;
+}
+
+.container{
+  max-width: 1600px;
+  height: 100%;
+
+}
+
+nav {
+  position: fixed;
+  margin-top: 0;
+  margin-bottom: 10px;
+  background-position: center;
+  background-color: #edc4ef;
+}
+
+header {
+  background-color: pink;
+  margin-top: 38px;
+}
+
+div {
+  border: solid 0.5px;
+  margin-bottom: 15px;
+
+}
+
+ul li{
+  display: inline;
+  list-style: none;
+}
+
+a {
+  text-align: right;
+  text-decoration: none;
+  color: black;
+}
+
+.one {
+  font-family: 'Lily Script One', cursive;
+}
+
+footer {
+  text-align: center;
+}
+
+.row::before, .row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"]{
+  float: left;
+  min-height: 7px;
+
+}
+
+.col-1 {width: 8.333333%;}
+.col-2 {width: 16.666667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333333%;}
+.col-5 {width: 41.666667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33333%;}
+.col-8 {width: 66.666667%;}
+.col-9 {width: 75%;}
+.col-12 {width: 100%;}
+
+@media screen and (min-width:760px) {
+  .part-one{
+    display: flex;
+    margin-top: 0;
+  }
+  .fa {
+    display: none;
+  }
+
+  @media all and (max-width:760px) {
+      .dates {
+      display: none;
+    }
+  }
